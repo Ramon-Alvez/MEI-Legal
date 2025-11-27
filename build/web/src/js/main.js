@@ -1,10 +1,14 @@
-
 const buttons = document.querySelectorAll("a.bttn");
-let botaoAtivo = document.querySelector(".active");
+let botaoAtivo = document.querySelector(".active"); // Captura o elemento ativo inicial
 
 buttons.forEach(botao => {
     botao.addEventListener('click', () => {
-        botaoAtivo.classList.remove('active');
-        botao.classList.toggle('ativo');
+        
+        if (botaoAtivo) {
+            botaoAtivo.classList.remove('active');
+        }
+
+        botao.classList.add('active'); 
+        botaoAtivo = botao;
     });
 });
