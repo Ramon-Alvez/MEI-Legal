@@ -1,0 +1,22 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 21 de nov. de 2025, 21:11:13
+    Author     : ramon
+*/
+
+:root {
+    /* Color Config */
+    --mainColor: #002AD0;
+    --mainColorActive: #031C80;
+    --bg: #D9D9D9;
+    --neutral_1: #D9D9D9;
+   
+    /* Font Config */
+    --font: "Inter", sans-serif;
+    --mainSize: 24px;
+    --titleSize: 40px;
+    --errorSize: 12px;
+}

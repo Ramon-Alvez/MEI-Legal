@@ -1,0 +1,104 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 de nov. de 2025, 15:06:05
+    Author     : ramon
+*/
+
+.table {
+    background-color: #FFFFFF80;
+    border: 1px solid #00000047;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-collapse: separate;
+    border-spacing: 0;
+    
+    width: 100%;
+}
+
+.table .table__header {
+    background-color: #D9D9D9;
+    border: 1px solid #00000033;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    height: 60px;
+}
+
+.table .table__header th {
+    padding: 0px 30px;
+    font-weight: 300;
+}
+.table .table__header th:first-child {
+    border-radius: 30px 0 0 30px;
+}
+.table .table__header th:last-child {
+    border-radius: 0 30px 30px 0;
+}
+.table .table__row:last-child td:first-child {
+    border-bottom-left-radius: 30px; 
+}
+.table .table__row:last-child td:last-child {
+    border-bottom-right-radius: 30px; 
+}
+
+.table .table__row:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #ECECEC; 
+}
+
+.table .table__row:nth-child(2) td:first-child {
+    border-top-left-radius: 30px;
+}
+.table .table__row:nth-child(2) td:last-child {
+    border-top-right-radius: 30px;
+}
+
+.table .table__row td {
+    text-align: center;
+    border-bottom: 2px solid #00000017;
+    padding: 20px 0 5px;
+}
+
+.table .hidden td {
+    opacity: 0;
+    font-size: 5px;
+}
+
+/* ---------------------------- */
+/* Edit | Del | Status          */
+/* ---------------------------- */
+
+.table .table__header .edit,
+.table .table__row .edit,
+.table .table__header .status,
+.table .table__row .status {
+    border-left: 1px solid #0000001A;
+}
+
+.table .table__header .edit,
+.table .table__header .delete,
+.table .table__header .status {
+    color: #000;
+    font-weight: 600;
+}
+
+.table .table__row .edit i,
+.table .table__row .delete i {
+    color: #000;
+    &:hover {
+        transition: 0.2s ease-in;
+    }
+}
+
+.table .table__row .edit i:hover {
+    color: var(--mainColor);
+}
+.table .table__row .delete i:hover {
+    color: red;
+}
+
+.table .table__row .status i:hover {
+    font-size: var(--mainSize);
+}

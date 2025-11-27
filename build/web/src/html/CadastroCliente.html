@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cadastro de Cliente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/variables.css"/>
+        <link rel="stylesheet" href="../css/reset.css"/>
+        <link rel="stylesheet" href="../css/main.css"/>
+        <link rel="stylesheet" href="../css/forms.css"/>
+    </head>
+    <body class="secondary_body">
+        <main class="content">
+            <header class="page_header">
+                <h1>Cadastro de Cliente</h1>
+
+                <a class="bttn" href="../jsp/CadastroCliente/Clientes.jsp">Voltar</a>
+            </header>
+
+            <form class="cad__form" method="POST" action="../jsp/CadastroCliente/cad_cliente.jsp" id="form">
+                <div class="input__container">
+                    <label for="nome">Nome</label>
+                    <input class="input" type="text" name="nome" id="nome"/>
+                    <p class="data_error"></p>
+                </div>
+
+                <div class="input__container">
+                    <label for="cpf">CPF</label>
+                    <input class="input" type="text" name="cpf" id="cpf"/>
+                    <p class="data_error"></p>
+                </div>
+
+                <div class="input__container">
+                    <label for="idade">Idade</label>
+                    <input class="input" type="number" name="idade" id="idade"/>
+                    <p class="data_error"></p>
+                </div>
+
+                <div class="input__container">
+                    <label for="dataCadastro">Data Cadastro</label>
+                    <input class="input" type="date" name="dataCadastro" id="dataCadastro"/>
+                    <p class="data_error"></p>
+                </div>
+
+                <input class="sbmt__bttn" type="submit" value="Salvar" />
+            </form>
+        </main>
+
+        <script type="text/javascript" src="../js/manageForm_Cliente.js"></script>
+    </body>
+</html>

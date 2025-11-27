@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cadastro de Funcionário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/variables.css"/>
+        <link rel="stylesheet" href="../css/reset.css"/>
+        <link rel="stylesheet" href="../css/main.css"/>
+        <link rel="stylesheet" href="../css/forms.css"/>
+    </head>
+    <body>
+        <main class="content">
+            <header class="page_header">
+                <h1>Cadastro de Funcionário</h1>
+
+                <a class="bttn" href="../jsp/CadastroFuncionario/Funcionarios.jsp">Voltar</a>
+            </header>
+
+            <form class="cad__form" method="POST" action="../jsp/CadastroFuncionario/cad_funcionario.jsp" id="form">
+                <div class="input__container">
+                    <label for="nome">Nome</label>
+                    <input class="input" type="text" name="nome" id="nome"/>
+                    <p class="data_error"></p>
+                </div>
+
+                <div class="input__container">
+                    <label for="cpf">CPF</label>
+                    <input class="input" type="text" name="cpf" id="cpf"/>
+                    <p class="data_error"></p>
+                </div>
+
+                <div class="input__container">
+                    <label for="email">Email</label>
+                    <input class="input" type="email" name="email" id="email"/>
+                    <p class="data_error"></p>
+                </div>
+
+                <div class="input__container">
+                    <label for="telefone">Telefone</label>
+                    <input class="input" type="text" name="telefone" id="telefone"/>
+                    <p class="data_error"></p>
+                </div>
+
+                <input class="sbmt__bttn" type="submit" value="Salvar" />
+            </form>
+        </main>
+
+        <script type="text/javascript" src="../js/manageForm_Funcionarios.js"></script>
+    </body>
+</html>

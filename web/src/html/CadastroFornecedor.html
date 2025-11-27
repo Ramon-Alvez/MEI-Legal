@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Cadastro de Fornecedor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/variables.css"/>
+        <link rel="stylesheet" href="../css/reset.css"/>
+        <link rel="stylesheet" href="../css/main.css"/>
+        <link rel="stylesheet" href="../css/forms.css"/>
+    </head>
+    <body>
+        <main class="content">
+            <header class="page_header">
+                <h1>Cadastro de Fornecedor</h1>
+
+                <a class="bttn" href="../jsp/CadastroFornecedor/Fornecedores.jsp">Voltar</a>
+            </header>
+
+            <form class="cad__form" method="POST" action="../jsp/CadastroFornecedor/cad_fornecedor.jsp" id="form">
+                <div class="input__container">
+                    <label for="razaoSocial">Razão Social</label>
+                    <input class="input" type="text" name="razaoSocial" id="razaoSocial"/>
+                    <p class="data_error"></p>
+                </div>
+
+                <div class="input__container">
+                    <label for="cnpj">CNPJ</label>
+                    <input class="input" type="text" name="cnpj" id="cnpj"/>
+                    <p class="data_error"></p>
+                </div>
+                
+                <div class="input__container">
+                    <label for="servico">Serviços Prestados</label>
+                    <input class="input" type="text" name="servico" id="servico"/>
+                    <p class="data_error"></p>
+                </div>
+
+                <div class="input__container">
+                    <label for="telefone">Telefone</label>
+                    <input class="input" type="text" name="telefone" id="telefone"/>
+                    <p class="data_error"></p>
+                </div>
+                
+                <div class="input__container">
+                    <label for="email">Email</label>
+                    <input class="input" type="email" name="email" id="email"/>
+                    <p class="data_error"></p>
+                </div>
+
+                <input class="sbmt__bttn" type="submit" value="Salvar" />
+            </form>
+        </main>
+
+        <script type="text/javascript" src="../js/manageForm_Fornecedor.js"></script>
+    </body>
+</html>

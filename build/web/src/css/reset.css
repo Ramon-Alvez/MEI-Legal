@@ -1,0 +1,58 @@
+/* 
+    Created on : 21 de nov. de 2025, 21:06:17
+    Author     : ramon
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+}
+
+p, a {
+    font-size: var(--mainSize);
+}
+
+h1 {
+    font-size: var(--titleSize);
+}
+
+th,
+td {
+    font-size: var(--mainSize);
+}
+
+/* REGRAS PARA O BODY DA PÁGINA INTERNA (Clientes.jsp) */
+
+/* 1. Largura da barra */
+*::-webkit-scrollbar {
+  width: 8px; /* Mais estreita */
+}
+
+/* 2. Fundo/Calha (Opcional, pode ser transparente se quiser só a barrinha) */
+*::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* 3. A Barrinha (Thumb) */
+*::-webkit-scrollbar-thumb {
+  background-color: #555; /* Cor da barrinha */
+  border-radius: 4px;     /* Bordas arredondadas */
+}
+
+/* 4. Efeito Hover (Feedback Visual) */
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #333;
+}
+
+/* Regras de fallback para Firefox */
+* {
+  scrollbar-color: #555 transparent; /* thumb track */
+  scrollbar-width: thin;
+}
